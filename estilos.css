@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #1D202B;
+    color: #fff;
+}
+.contenedor {
+    display: flex;
+    height: 100vh; /*toda la altura de la ventana*/   
+}
+/*banner lateral 20% de ancho*/
+.banner-lateral {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+
+}
+.banner-lateral ul {
+    list-style: none;
+    margin: 15px 0;
+
+}
+.banner-lateral ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+.boton a {
+    text-decoration: none;
+    color: black;
+
+}
+/*contenedor de servicios 80% */
+.contenedor-principal {
+    width: 70%;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+
+}
+
+
+
+.textos {
+    
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 10px;
+}
+.boton {
+     display: inline-block;
+    margin-top: 10px;
+    background: #25D366; /* color WhatsApp */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
