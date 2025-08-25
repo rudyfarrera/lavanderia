@@ -3,32 +3,60 @@ body {
     margin: 0;
     background: #1D202B;
     color: #fff;
+    height: 100vh;
 }
 .contenedor {
+    
     display: flex;
+    flex-direction: row;
     height: 100vh; /*toda la altura de la ventana*/   
 }
 /*banner lateral 20% de ancho*/
 .banner-lateral {
-    width: 30%;
-    background-size: cover;
+    width: 15%;
+    height: 100vh;
+    background-image: url(img/lavaboom\ 1\ recortado.jpg);
+    /* background-size: 100% 100%; */
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* object-fit: img; */
+    opacity: 0.8;
+    
+    
+}
+
+.banner-lateral .textos{
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    background-position: left;
+    color: white;
+    text-align: left;
+
+}
+.banner-lateral h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 
 }
 .banner-lateral ul {
     list-style: none;
-    margin: 15px 0;
-
+    padding: 0;
+    margin: 0;
 }
-.banner-lateral ul li {
+.banner-lateral li {
     margin-bottom: 10px;
-    font-weight: bold;
 
 }
 .boton a {
@@ -38,36 +66,64 @@ body {
 }
 /*contenedor de servicios 80% */
 .contenedor-principal {
-    width: 70%;
-    flex: 1;
+    width: 85%;
+    height: max-content;
+    /* max-height: cover; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 20px;
     color: white;
+    box-sizing: border-box;
+    padding: 1%;
+    
 
+}
+/* .contenedor-principal img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: cover;
+    max-width: 100%;
+    margin-top: auto; */
+    /* width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0; */
+    
 }
 
 
 
-.textos {
+
+.contenedor-principal .textos {
     
     background: rgba(0,0,0,0.4);
     padding: 15px;
     border-radius: 10px;
+    position: absolute;
+
 }
 .boton {
      display: inline-block;
     margin-top: 10px;
-    background: #25D366; /* color WhatsApp */
+    background: #d3e12ff5; /* color WhatsApp */
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 
+/* @media screen and {max-width: 900px; { */
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    
+}
+    
+}
